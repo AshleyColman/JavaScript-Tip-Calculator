@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Ashley Colman" />
+  <link rel="icon" type="image/x-icon" href="./challengeFiles/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="calculator.js" defer></script>
+  <title>JavaScript Calculator</title>
+</head>
+<body>
+  <main>
+    <h1 class="heading">spli<br />tter</h1>
+    <div class="card">
+      <div class="middle">
+        <h2 class="subheading">Bill</h2>
+          <input type="number" id="bill-total-inputfield" class="inputfield" name="bill-total-inputfield" autofocus placeholder="0" />
+          <div class="total-box flex-space-between">
+              <img src="./challengeFiles/images/icon-dollar.svg" id="dollar-icon" class="icon" />
+            </div>
+          <h2 class="subheading">Select Tip %</h2>
+          <div class="tip-buttons">
+            <button id="five-button" class="tip-button">5%</button>
+            <button id="ten-button" class="tip-button">10%</button>
+            <button id="fifteen-button" class="tip-button">15%</button>
+            <button id="twentyfive-button" class="tip-button">25%</button>
+            <button id="fifty-button" class="tip-button">50%</button>
+            <button id="seventyfive-button" class="tip-button">75%</button>
+            </div>
+            <h2 class="subheading" id="people-subheading">Number of People</h2>
+            <p id="people-zero-error-text" class="error-text display-none">Value cannot be zero.</p>
+              <input type="number" id="people-inputfield" class="inputfield" name="people-inputfield" placeholder="0" />
+              <img src="challengeFiles/images/icon-person.svg" id="person-icon" class="icon" />
+              <div class="summary-box">
+                <div class="data-field flex-space-between">
+                  <div class="data-left">
+                    <p class="data-category">
+                      Tip Amount
+                      </p>
+                      <p class="data-type">
+                        / person
+                        </p>
+                    </div>
+                  <p id="tip-amount-person" class="data-cost">
+                    $0
+                    </p>
+                  </div>
+                  <div class="data-field flex-space-between">
+                    <div class="data-left">
+                      <p class="data-category">
+                        Total
+                        </p>
+                        <p class="data-type">
+                          / person
+                          </p>
+                      </div>
+                    <p id="total-amount-person" class="data-cost">
+                        $0
+                      </p>
+                    </div>
+                    <button id="reset-button" class="reset-button">reset</button>
+                </div>
+        </div>
+        <div class="bottom-space">
+        </div>
+      </div>
+    </main>
+</body>
+</html>

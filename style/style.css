@@ -1,0 +1,221 @@
+/* #region reset */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* #endregion */
+
+/* #region vars */
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grey-cyan1: hsl(186, 14%, 43%);
+  --dark-grey-cyan2: hsl(184, 14%, 56%);
+  --light-grey-cyan1: hsl(185, 41%, 84%);
+  --light-grey-cyan2: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+  --form-input-font-size: 24px;
+  --font-family: 'Space Mono', monospace;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+}
+/* #endregion */
+
+/* #region index */
+html, body, main {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-family);
+}
+main {
+  background-color: var(--light-grey-cyan1);
+}
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--very-dark-cyan);
+  line-height: 3rem;
+  padding: 1.5rem 0;
+}
+.card {
+  background-color: var(--white);
+  border-radius: 20px;
+  height: auto;
+  max-width: 400px;
+  margin: auto;
+}
+.middle {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+}
+.subheading {
+  color: var(--dark-grey-cyan1);
+  font-weight: var(--font-weight-700);
+  margin-bottom: 1rem;
+}
+#people-subheading {
+  margin-bottom: 0;
+}
+#people-inputfield {
+  margin-top: 1rem;
+}
+.error-text {
+  color: red;
+}
+.display-none {
+  display: none;
+}
+.inputfield
+{
+  border: none;
+  -moz-appearance: textfield;
+  text-align: right;
+  margin: auto;
+  margin-bottom: 2rem;
+  background-color: var(--light-grey-cyan2);
+  border-radius: 5px 5px;
+  padding: 0 1rem;
+  outline: none;
+  color: var(--very-dark-cyan);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-700);
+  width: 100%;
+}
+.inputfield:focus {
+  outline: 2px solid var(--strong-cyan);
+}
+.inputfield-error-outline {
+  outline: 2px solid #FF0000;
+}
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.total {
+  color: var(--very-dark-cyan);
+}
+.dollar-sign, .total {
+    font-weight: var(--font-weight-700);
+    font-size: 1.5rem;
+}
+.tip-button {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  font-weight: var(--font-weight-700);
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.tip-button:hover {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+.tip-buttons {
+  display: grid;
+  grid-template-areas:
+  'five ten'
+  'fifteen twentyfive'
+  'fifty custom';
+  grid-gap: 1rem;
+  grid-template-columns: 138px 138px;
+  grid-template-rows: 40px 40px 40px;
+  margin-bottom: 2rem;
+}
+#five-button {
+  grid-area: five;
+}
+#ten-button {
+  grid-area: ten;
+}
+#fifteen-button {
+  grid-area: fifteen;
+}
+#twentyfive-button {
+  grid-area: twentyfive;
+}
+#fifty-button {
+  grid-area: fifty;
+}
+#custom-inputfield {
+  grid-area: custom;
+  width: 138px;
+  margin: 0;
+}
+.icon {
+  object-fit: contain;
+  display: block;
+  margin-left: 1rem;
+}
+#person-icon {
+    margin-top: -55px;
+    margin-bottom: 3rem;
+}
+#dollar-icon {
+  margin-top: -95px;
+  margin-left: 1rem;
+}
+.summary-box {
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: var(--very-dark-cyan);
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+.data-field {
+  margin-bottom: 1rem;
+}
+.data-category {
+  color: var(--white);
+  font-weight: var(--font-weight-700);
+}
+.data-type {
+  color: var(--light-grey-cyan1);
+  font-size: 0.8rem;
+}
+.data-cost {
+  color: var(--strong-cyan);
+  font-weight: var(--font-weight-700);
+  font-size: 1.5rem;
+}
+.reset-button {
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--strong-cyan);
+  border: none;
+  color: var(--very-dark-cyan);
+  font-weight: var(--font-weight-700);
+  font-size: 1.25rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.reset-button:hover {
+  background-color: var(--light-grey-cyan2);
+}
+.bottom-space {
+  height: 0.5rem;
+}
+/* #endregion */
